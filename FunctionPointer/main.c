@@ -1,34 +1,11 @@
 #include <stdio.h>
 
 
-void function(int x)
-{
-    printf("x: %d\n", x);
-}
-
-
-double add(double x, double y)
-{
-    return x + y;
-}
-
-
-double subtract(double x, double y)
-{
-    return x - y;
-}
-
-
-double multiply(double x, double y)
-{
-    return x * y;
-}
-
-
-double divide(double x, double y)
-{
-    return x / y;
-}
+void function(int);
+double add(double, double);
+double subtract(double, double);
+double multiply(double, double);
+double divide(double, double);
 
 
 int main()
@@ -51,3 +28,14 @@ int main()
 
     return 0;
 }
+
+
+void function(int x) { printf("x: %d\n", x); }
+
+double add(double x, double y) { return x + y; }
+
+double subtract(double x, double y) { return x - y; }
+
+double multiply(double x, double y) { return x * y; }
+
+double divide(double x, double y) { return x / y; }
